@@ -86,7 +86,7 @@ module MaerskClient
         :'export_voyage_number' => :'exportVoyageNumber',
         :'import_voyage_number' => :'importVoyageNumber',
         :'transport_call_sequence_number' => :'transportCallSequenceNumber',
-        :'un_location_code' => :'unLocationCode',
+        :'un_location_code' => :'UNLocationCode',
         :'facility_code' => :'facilityCode',
         :'facility_code_list_provider' => :'facilityCodeListProvider',
         :'facility_type_code' => :'facilityTypeCode',
