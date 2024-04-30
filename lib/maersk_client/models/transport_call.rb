@@ -86,7 +86,7 @@ module MaerskClient
         :'export_voyage_number' => :'exportVoyageNumber',
         :'import_voyage_number' => :'importVoyageNumber',
         :'transport_call_sequence_number' => :'transportCallSequenceNumber',
-        :'un_location_code' => :'UNLocationCode',
+        :'un_location_code' => :'unLocationCode',
         :'facility_code' => :'facilityCode',
         :'facility_code_list_provider' => :'facilityCodeListProvider',
         :'facility_type_code' => :'facilityTypeCode',
@@ -235,8 +235,8 @@ module MaerskClient
         invalid_properties.push('invalid value for "facility_code", the character length must be smaller than or equal to 6.')
       end
 
-      if !@other_facility.nil? && @other_facility.to_s.length > 50
-        invalid_properties.push('invalid value for "other_facility", the character length must be smaller than or equal to 50.')
+      if !@other_facility.nil? && @other_facility.to_s.length > 100
+        invalid_properties.push('invalid value for "other_facility", the character length must be smaller than or equal to 100.')
       end
 
       if @mode_of_transport.nil?
@@ -261,7 +261,7 @@ module MaerskClient
       return false unless facility_code_list_provider_validator.valid?(@facility_code_list_provider)
       facility_type_code_validator = EnumAttributeValidator.new('String', ["BOCR", "CLOC", "COFS", "COYA", "OFFD", "DEPO", "INTE", "POTE", "RAMP"])
       return false unless facility_type_code_validator.valid?(@facility_type_code)
-      return false if !@other_facility.nil? && @other_facility.to_s.length > 50
+      return false if !@other_facility.nil? && @other_facility.to_s.length > 100
       return false if @mode_of_transport.nil?
       mode_of_transport_validator = EnumAttributeValidator.new('String', ["VESSEL", "RAIL", "TRUCK", "BARGE"])
       return false unless mode_of_transport_validator.valid?(@mode_of_transport)
@@ -393,8 +393,8 @@ module MaerskClient
         fail ArgumentError, 'other_facility cannot be nil'
       end
 
-      if other_facility.to_s.length > 50
-        fail ArgumentError, 'invalid value for "other_facility", the character length must be smaller than or equal to 50.'
+      if other_facility.to_s.length > 100
+        fail ArgumentError, 'invalid value for "other_facility", the character length must be smaller than or equal to 100.'
       end
 
       @other_facility = other_facility

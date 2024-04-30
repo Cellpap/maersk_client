@@ -90,7 +90,7 @@ module MaerskClient
             else
               # raise if data contains keys that are not known to the model
               raise unless (data.keys - const.acceptable_attributes).empty?
-              model = const.build_from_hash(data)
+              model = const.build_from_hash(data).to_hash
               return model if model
             end
           end

@@ -64,7 +64,7 @@ module MaerskClient
         :'location_name' => :'locationName',
         :'latitude' => :'latitude',
         :'longitude' => :'longitude',
-        :'un_location_code' => :'UNLocationCode',
+        :'un_location_code' => :'unLocationCode',
         :'facility_code' => :'facilityCode',
         :'facility_code_list_provider' => :'facilityCodeListProvider',
         :'address' => :'address'

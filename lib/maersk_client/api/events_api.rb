@@ -145,7 +145,7 @@ module MaerskClient
       query_params[:'vesselIMONumber'] = opts[:'vessel_imo_number'] if !opts[:'vessel_imo_number'].nil?
       query_params[:'exportVoyageNumber'] = opts[:'export_voyage_number'] if !opts[:'export_voyage_number'].nil?
       query_params[:'carrierServiceCode'] = opts[:'carrier_service_code'] if !opts[:'carrier_service_code'].nil?
-      query_params[:'UNLocationCode'] = opts[:'un_location_code'] if !opts[:'un_location_code'].nil?
+      query_params[:'unLocationCode'] = opts[:'un_location_code'] if !opts[:'un_location_code'].nil?
       query_params[:'equipmentEventTypeCode'] = @api_client.build_collection_param(opts[:'equipment_event_type_code'], :csv) if !opts[:'equipment_event_type_code'].nil?
       query_params[:'limit'] = opts[:'limit'] if !opts[:'limit'].nil?
       query_params[:'cursor'] = opts[:'cursor'] if !opts[:'cursor'].nil?
