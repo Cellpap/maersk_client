@@ -183,7 +183,7 @@ module MaerskClient
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: EventsApi#events_get\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
-      return data, status_code, headers
+      return data.events, status_code, headers
     end
   end
 end
