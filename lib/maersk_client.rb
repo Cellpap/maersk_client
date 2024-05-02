@@ -18,7 +18,7 @@ require 'maersk_client/configuration'
 
 # Models
 require 'maersk_client/models/address'
-require 'maersk_client/models/api_error'
+require 'maersk_client/models/error'
 require 'maersk_client/models/api_validation_error'
 require 'maersk_client/models/document_references_inner'
 require 'maersk_client/models/equipment_event'

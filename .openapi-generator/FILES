@@ -8,7 +8,7 @@ Gemfile
 README.md
 Rakefile
 docs/Address.md
-docs/ApiError.md
+docs/Error.md
 docs/ApiValidationError.md
 docs/DocumentReferencesInner.md
 docs/EquipmentEvent.md
@@ -30,7 +30,7 @@ lib/maersk_client/api_client.rb
 lib/maersk_client/api_error.rb
 lib/maersk_client/configuration.rb
 lib/maersk_client/models/address.rb
-lib/maersk_client/models/api_error.rb
+lib/maersk_client/models/error.rb
 lib/maersk_client/models/api_validation_error.rb
 lib/maersk_client/models/document_references_inner.rb
 lib/maersk_client/models/equipment_event.rb
@@ -50,7 +50,7 @@ spec/api/events_api_spec.rb
 spec/api_client_spec.rb
 spec/configuration_spec.rb
 spec/models/address_spec.rb
-spec/models/api_error_spec.rb
+spec/models/error_spec.rb
 spec/models/api_validation_error_spec.rb
 spec/models/document_references_inner_spec.rb
 spec/models/equipment_event_spec.rb

@@ -1,4 +1,4 @@
-# MaerskClient::ApiError
+# MaerskClient::Error
 
 ## Properties
 
@@ -17,7 +17,7 @@
 ```ruby
 require 'maersk_client'
 
-instance = MaerskClient::ApiError.new(
+instance = MaerskClient::Error.new(
   method: null,
   request_uri: null,
   status: null,
